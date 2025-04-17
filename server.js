@@ -21,5 +21,5 @@ app.use('/api/chat', chatRoute);
 
 // Server starten
 app.listen(PORT, () => {
-    console.log(`✅ Chatbot-Server aktiv unter: http://localhost:${PORT}`);
+    console.log(`✅ Chatbot-Server aktiv unter: https://chatbot-server-1-w416.onrender.com:${PORT}`);
 });
