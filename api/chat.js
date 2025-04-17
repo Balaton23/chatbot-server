@@ -29,11 +29,17 @@ router.post('/', async (req, res) => {
         });
 
         const data = await response.json();
+
+        if (!data.choices || !data.choices[0]) {
+            console.error('❌ OpenAI API hat keine gültige Antwort zurückgegeben:', data);
+            return res.status(500).json({ error: 'Keine gültige Antwort von OpenAI.' });
+        }
+
         res.json({ reply: data.choices[0].message.content.trim() });
 
     } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Fehler beim Abrufen der Antwort.' });
+        console.error('❌ Fehler beim OpenAI-Request:', err);
+        res.status(500).json({ error: err.message || 'Unbekannter Fehler beim API-Request.' });
     }
 });
 
