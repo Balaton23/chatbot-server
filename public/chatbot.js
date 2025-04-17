@@ -12,7 +12,7 @@ async function postChatMessage() {
 
     try {
         // Anfrage an deinen Render-Server
-        const response = await fetch('https://chatbot-server-pnks.onrender.com/', {
+        const response = await fetch('https://chatbot-server-1-w416.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
