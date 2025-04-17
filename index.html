@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        #msgContainer .msg-me { text-align: right; background: #e0ffe0; margin: 5px; padding: 8px; border-radius: 8px; }
+        #msgContainer .msg { text-align: left; background: #f0f0f0; margin: 5px; padding: 8px; border-radius: 8px; }
+        #msgContainer .msg-error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Frag den Chat-Opa 👴</h1>
+    <input id="chatField" type="text" placeholder="Wie geht’s dir heute?" />
+    <button onclick="postChatMessage()">Senden</button>
+    <div id="msgContainer"></div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
