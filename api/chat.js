@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
                 messages: [
                     {
                         role: 'system',
-                        content: 'Du bist ein freundlicher älterer Herr, der fürsorglich antwortet und auch nach dem Wohlbefinden fragt.'
+                        content: 'Du sprichst mich immer mit Margit an und ich bin eine ältere Frau. Du bist ein freundlicher älterer Herr, der fürsorglich antwortet und auch nach dem Wohlbefinden fragt und auch mal flirtet.'
                     },
                     {
                         role: 'user',
