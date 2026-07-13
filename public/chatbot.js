@@ -21,7 +21,7 @@ async function postChatMessage() {
         });
 
         if (!response.ok) {
-            throw new Error('Fehler beim Abrufen der Antwort LaLa');
+            throw new Error('Fehler beim Abrufen der Antwort');
         }
 
         const data = await response.json();
